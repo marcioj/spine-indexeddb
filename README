@@ -1,0 +1,6 @@
+Spine indexeddb is a simple api to provide persistance using the indexeddb.
+For usage just make any model extend the Spine.Model.IndexedDb module. As followed:
+
+User = Spine.Model.sub();
+User.configure('User','name','age','email');
+User.extend(Spine.Model.IndexedDb);
